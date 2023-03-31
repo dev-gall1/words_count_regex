@@ -1,5 +1,4 @@
 import re
-import nltk
 from nltk.corpus import stopwords
 from nltk.sentiment import SentimentIntensityAnalyzer
 #nltk.download('vader_lexicon')
@@ -58,6 +57,5 @@ print(len(chapters))
 score = {}
 for index,chapter in enumerate(chapters):
   score[index + 1] = analyser.polarity_scores(chapter)
-
 
 print(score)
